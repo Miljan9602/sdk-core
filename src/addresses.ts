@@ -32,7 +32,8 @@ export const UNI_ADDRESSES: AddressMap = constructSameAddressMap('0x1f9840a85d5a
 
 export const UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26197C432AFe78'
 
-export const V2_FACTORY_ADDRESS = '0x5D370a6189F89603FaB67e9C68383e63F7B6A262'
+// Change
+export const V2_FACTORY_ADDRESS = '0x14a378bB2A842d7ecCef135598778240C85a2383'
 export const V2_FACTORY_ADDRESSES: AddressMap = constructSameAddressMap(V2_FACTORY_ADDRESS, [
   ChainId.POLYGON,
   ChainId.OPTIMISM,
@@ -154,6 +155,16 @@ const AVALANCHE_ADDRESSES: ChainAddresses = {
 }
 
 // Avalanche v3 addresses
+const SEI_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x740b1c1de25031C31FF4fC9A62f554A55cdC1baD', // DONT HAVE FOR V2
+  multicallAddress: '0x1CCc264B2A6c2b47975b54b42Cd9E097908D5b04',
+  quoterAddress: '0xbe0F5544EC67e9B3b2D979aaA43f18Fd87E6257F', // DONT HAVE FOR V2
+  v3MigratorAddress: '0x44f5f1f5E452ea8d29C890E8F6e893fC0f1f0f97', // DONT HAVE FOR V2
+  nonfungiblePositionManagerAddress: '0x655C406EBFa14EE2006250925e54ec43AD184f8B', // DONT HAVE FOR V2
+  tickLensAddress: '0xEB9fFC8bf81b4fFd11fb6A63a6B0f098c6e21950', // DONT HAVE FOR V2
+  swapRouter02Address: '0xbb00FF08d01D300023C629E8fFfFcb65A5a578cE' // DONT HAVE FOR V2
+}
+
 const SEI_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x740b1c1de25031C31FF4fC9A62f554A55cdC1baD', // DONT HAVE FOR V2
   multicallAddress: '0x1CCc264B2A6c2b47975b54b42Cd9E097908D5b04',
@@ -203,7 +214,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES,
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
-  [ChainId.SEI_TESTNET]: SEI_ADDRESSES,
+  [ChainId.SEI_TESTNET]: SEI_TESTNET_ADDRESSES,
+  [ChainId.SEI]: SEI_ADDRESSES
 }
 
 /* V3 Contract Addresses */
