@@ -33,7 +33,7 @@ export const UNI_ADDRESSES: AddressMap = constructSameAddressMap('0x1f9840a85d5a
 export const UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26197C432AFe78'
 
 // Change
-export const V2_FACTORY_ADDRESS = '0x14a378bB2A842d7ecCef135598778240C85a2383'
+export const V2_FACTORY_ADDRESS = '0x71f6b49ae1558357bBb5A6074f1143c46cBcA03d'
 export const V2_FACTORY_ADDRESSES: AddressMap = constructSameAddressMap(V2_FACTORY_ADDRESS, [
   ChainId.POLYGON,
   ChainId.OPTIMISM,
@@ -42,9 +42,10 @@ export const V2_FACTORY_ADDRESSES: AddressMap = constructSameAddressMap(V2_FACTO
   ChainId.BNB,
   ChainId.AVALANCHE,
   ChainId.BASE,
-  ChainId.SEI_TESTNET
+  ChainId.SEI_TESTNET,
+  ChainId.SEI
 ])
-export const V2_ROUTER_ADDRESS = '0x385488FfbFf2265DaC31d38497b616fA6cc81231'
+export const V2_ROUTER_ADDRESS = '0xB5C7953Ffe8c1C9cCCa0203eb15124dacD799ed1'
 export const V2_ROUTER_ADDRESSES: AddressMap = constructSameAddressMap(V2_ROUTER_ADDRESS)
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -157,7 +158,7 @@ const AVALANCHE_ADDRESSES: ChainAddresses = {
 // Avalanche v3 addresses
 const SEI_TESTNET_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x740b1c1de25031C31FF4fC9A62f554A55cdC1baD', // DONT HAVE FOR V2
-  multicallAddress: '0x1CCc264B2A6c2b47975b54b42Cd9E097908D5b04',
+  multicallAddress: '0x2Fc368d08806791fc978A8f4Fe58F57FbCfe3180',
   quoterAddress: '0xbe0F5544EC67e9B3b2D979aaA43f18Fd87E6257F', // DONT HAVE FOR V2
   v3MigratorAddress: '0x44f5f1f5E452ea8d29C890E8F6e893fC0f1f0f97', // DONT HAVE FOR V2
   nonfungiblePositionManagerAddress: '0x655C406EBFa14EE2006250925e54ec43AD184f8B', // DONT HAVE FOR V2
@@ -167,7 +168,7 @@ const SEI_TESTNET_ADDRESSES: ChainAddresses = {
 
 const SEI_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x740b1c1de25031C31FF4fC9A62f554A55cdC1baD', // DONT HAVE FOR V2
-  multicallAddress: '0x1CCc264B2A6c2b47975b54b42Cd9E097908D5b04',
+  multicallAddress: '0x769B333B17597D8e85C51065FCf2Ae130a57979d',
   quoterAddress: '0xbe0F5544EC67e9B3b2D979aaA43f18Fd87E6257F', // DONT HAVE FOR V2
   v3MigratorAddress: '0x44f5f1f5E452ea8d29C890E8F6e893fC0f1f0f97', // DONT HAVE FOR V2
   nonfungiblePositionManagerAddress: '0x655C406EBFa14EE2006250925e54ec43AD184f8B', // DONT HAVE FOR V2
