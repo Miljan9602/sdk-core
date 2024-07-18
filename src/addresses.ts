@@ -13,7 +13,7 @@ type ChainAddresses = {
   v1MixedRouteQuoterAddress?: string
 }
 
-const DEFAULT_NETWORKS = [ChainId.MAINNET, ChainId.GOERLI, ChainId.SEPOLIA]
+const DEFAULT_NETWORKS = [ChainId.SEI, ChainId.SEI_TESTNET]
 
 function constructSameAddressMap(address: string, additionalNetworks: ChainId[] = []): AddressMap {
   return DEFAULT_NETWORKS.concat(additionalNetworks).reduce<AddressMap>((memo, chainId) => {
@@ -33,7 +33,7 @@ export const UNI_ADDRESSES: AddressMap = constructSameAddressMap('0x1f9840a85d5a
 export const UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26197C432AFe78'
 
 // Change
-export const V2_FACTORY_ADDRESS = '0x71f6b49ae1558357bBb5A6074f1143c46cBcA03d'
+export const V2_FACTORY_ADDRESS = '0xeE6Ad607238f8d2C63767245d78520F06c303D31'
 export const V2_FACTORY_ADDRESSES: AddressMap = constructSameAddressMap(V2_FACTORY_ADDRESS, [
   ChainId.POLYGON,
   ChainId.OPTIMISM,
@@ -45,7 +45,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = constructSameAddressMap(V2_FACTO
   ChainId.SEI_TESTNET,
   ChainId.SEI
 ])
-export const V2_ROUTER_ADDRESS = '0xB5C7953Ffe8c1C9cCCa0203eb15124dacD799ed1'
+export const V2_ROUTER_ADDRESS = '0x527b42CA5e11370259EcaE68561C14dA415477C8'
 export const V2_ROUTER_ADDRESSES: AddressMap = constructSameAddressMap(V2_ROUTER_ADDRESS)
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon

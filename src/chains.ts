@@ -18,7 +18,7 @@ export enum ChainId {
   AVALANCHE = 43114,
   BASE_GOERLI = 84531,
   BASE = 8453,
-  SEI_TESTNET = 713715,
+  SEI_TESTNET = 1328,
   SEI = 1329
 }
 
